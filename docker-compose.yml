@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  valheim:
+    ports:
+      - 2456-2457:2456-2457/udp
+    volumes:
+      - C:/Users/ibrah/Valheim/config:/config
+      - C:/Users/ibrah/Valheim/data:/opt/valheim
+    environment:
+      SERVER_PASS: "11223"
+      WORLD_NAME: "Neotopia"
+      SERVER_NAME: "Kawkeb Zohal"
+      RESTART_CRON: ""
+    image: lloesche/valheim-server
